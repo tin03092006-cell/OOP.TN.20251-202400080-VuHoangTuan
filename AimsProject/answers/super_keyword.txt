@@ -1,0 +1,1 @@
+Từ khóa super được dùng để tái sử dụng đoạn mã nguồn (trong constructor, phương thức toString()) của lớp cha trực tiếp trong lớp con.
