@@ -72,11 +72,12 @@ public class Cart {
     }
 
     public void print() {
-        System.out.println("=== Total items in cart: " + qtyOrdered + " ===");
-        System.out.println("=== All items in cart ===");
-        for (DigitalVideoDisc item : itemsInCart) {
-            if (item != null)
-                System.out.println("[Title]: " + item.getTitle() + ", [Cost]: " + item.getCost());
+        System.out.println("***********************CART***********************");
+        for (int i = 0; i < qtyOrdered; i++) {
+            System.out.println((i + 1) + ". " + itemsInCart[i].toString());
         }
+        System.out.println("Total cost: " + calculateTotalCost() + "$");
+        System.out.println("**************************************************");
+
     }
 }
