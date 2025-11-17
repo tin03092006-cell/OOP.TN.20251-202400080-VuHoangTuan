@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NoGarbage",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.Garbage.NoGarbage",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "ConcatenationInLoops",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.Garbage.ConcatenationInLoops",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "TestingParameters",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.parameters.TestingParameters",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "TestingParameters",
+            "request": "launch",
+            "mainClass": "src.com.hust.kstn.parameters.TestingParameters",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "TestingParameters",
+            "request": "launch",
+            "mainClass": "OtherProject.src.com.hust.kstn.parameters.TestingParameters",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "TestingParameters",
+            "request": "launch",
+            "mainClass": "OtherProject.src.com.hust.kstn.TestingParameters",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
