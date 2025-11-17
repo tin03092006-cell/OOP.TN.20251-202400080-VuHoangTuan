@@ -1,18 +1,31 @@
 package com.hust.kstn.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Book extends Media {
-    private BookAuthor[] authors = new BookAuthor[10];
-    private int authorCount = 0;
+
     private int numOfTokens;
-    
-    public Book(String title, String category, double cost, int numOfTokens, BookAuthor[] authors) {
-        super(title, cost, category);
+    private List<BookAuthor> authors = new ArrayList<>();
+    public Book(int id, String title, String category, float cost) {
+        super(id, title, category, cost);
+    }
+
+    public Book(int id, String title, String category, float cost, int numOfTokens) {
+        super(id, title, category, cost);
         this.numOfTokens = numOfTokens;
-        for (int i = 0; i < authors.length; i++) 
-            if (authors[i] != null) {
-                this.authors[i] = authors[i];
-                authorCount++;
-            }
+    }
+
+    public void addAuthor(BookAuthor author) {
+        if (!authors.contains(author)) {
+            authors.add(author);
+        }
+    }
+
+    public void removeAuthor(BookAuthor author) {
+        if (authors.contains(author)) {
+            authors.remove(author);
+        }
     }
 
     public int getNumOfTokens() {
@@ -21,10 +34,7 @@ public class Book extends Media {
 
     @Override
     public String toString() {
-        String result = super.toString() + "["
-            + this.numOfTokens + "]\n";
-        for (int i = 0; i < authorCount; i++) 
-            result += this.authors[i].toString();
-        return result;
+       
+        return "Book - " + getTitle() + " - " + getCategory() + " - " + getCost() + "$ - Tokens: " + numOfTokens + " - Authors: " + authors;
     }
-}   
+}

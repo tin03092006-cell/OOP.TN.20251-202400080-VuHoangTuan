@@ -27,7 +27,7 @@ public class DigitalVideoDisc {
 		return cost;
 	}
 
-	public DigitalVideoDisc(String title, String category, String director, int length, double cost) {
+	public DigitalVideoDisc(int id, String title, String category, float cost, int length, String director) {
 		nbDigitalVideoDiscs++;
 		this.id = nbDigitalVideoDiscs;
 		this.title = title;

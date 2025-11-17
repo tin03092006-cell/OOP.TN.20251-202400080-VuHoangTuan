@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BookTest",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.test.BookTest",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "CompactDiscTest",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.test.CompactDiscTest",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "com.hust.kstn.Aims",
+            "projectName": "OOP.TN.20251-202400080-VuHoangTuan_d32a1d29"
+        },
+        {
+            "type": "java",
             "name": "NoGarbage",
             "request": "launch",
             "mainClass": "com.hust.kstn.Garbage.NoGarbage",
