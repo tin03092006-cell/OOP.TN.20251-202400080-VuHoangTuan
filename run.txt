@@ -1,0 +1,4 @@
+java -cp bin com.hust.kstn.test.CartTest
+java -cp bin com.hust.kstn.test.StoreTest
+java -cp bin com.hust.kstn.test.CompactDiscTest
+java -cp bin com.hust.kstn.test.BookTest
